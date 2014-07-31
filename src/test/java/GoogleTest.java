@@ -6,6 +6,7 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
@@ -33,7 +34,12 @@ public class GoogleTest {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-  driver = new FirefoxDriver();
+	 FirefoxProfile profile = new FirefoxProfile();
+
+	 profile.setPreference("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+
+	 WebDriver driver = new FirefoxDriver(profile);
+ // driver = new FirefoxDriver();
   driver.get("http://www.google.com/");
   driver.findElement(By.name("q")).sendKeys("Selenium");
   //driver.quit();
