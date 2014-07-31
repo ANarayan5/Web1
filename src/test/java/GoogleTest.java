@@ -23,7 +23,7 @@ public class GoogleTest {
 	//    capabilities.setCapability("chrome.binary","<<your chrome path>>");
 	    capability.setCapability(ChromeOptions.CAPABILITY, options);
 	    */
-	 DesiredCapabilities capability = DesiredCapabilities.firefox();
+	// DesiredCapabilities capability = DesiredCapabilities.firefox();
 	 try {
 	//	driver = new RemoteWebDriver(new URL("http://192.168.1.132:4445/wd/hub"), capability);
 	//	 driver = new RemoteWebDriver() 
