@@ -44,6 +44,7 @@ public class GoogleTest {
  // driver = new FirefoxDriver();
   driver.get("http://www.google.com/");
   driver.findElement(By.name("q")).sendKeys("Selenium");
-  //driver.quit();
+  Thread.sleep(5000);
+  driver.quit();
  }
 }
